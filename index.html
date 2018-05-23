@@ -11,20 +11,19 @@
     </canvas>
 
   <script>
-    for (var i = 0; i < 10000; i++) {
-      var canvas = document.getElementById("myCanvas");
-      var ctx = canvas.getContext("2d");
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    for (var i = 0; i < 600; i++) {
       var x = Math.random() * 1200;
       var y = Math.random() * 600;
-      var raio = Math.random() * 60 + 10;
+      var raio = Math.random() * 15 + 10;
       var red_line = Math.random() * 255;
       var green_line = Math.random() * 255;
       var blue_line = Math.random() * 255;
       var red_fill = Math.random() * 255;
       var green_fill = Math.random() * 255;
       var blue_fill = Math.random() * 255;
-
-
 
       ctx.strokeStyle = `rgb(${red_line}, ${green_line}, ${blue_line})`;
       ctx.fillStyle = `rgb(${red_fill}, ${green_fill}, ${blue_fill})`;
